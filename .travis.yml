@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - '0.10'
+install:
+  - npm install -g grunt-cli karma@~0.10.0 bower
+  - npm install
+script:
+  - grunt
+notifications:
+  email:
+  - ci-notify@openlabs.co.in
